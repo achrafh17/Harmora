@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="style.css">
+    <title>Demo</title>
+</head>
+<body>
+    
+    <div class="relative bg-gradient-to-b from-blue-100 to-blue-300">
+        <header class="fixed top-0 left-0 right-0 z-50 bg-white">
+            <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+              <a href="#" class="flex items-center">
+                <img src="Images/default_favicon.png" alt="Logo" class="h-8 mr-2">
+              </a>
+              <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                  <li><a href="index.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Accueil</a></li>
+                  <li><a href="about-us.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Qui sommes-nous ?</a></li>
+                  <li><a href="demo.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Démo</a></li>
+                  <li><a href="tarifs.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Tarifs</a></li>
+                </ul>
+              </nav>
+              <div class="hidden md:flex space-x-4 items-center">
+                <a href="signin.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Se connecter</a>
+                <a href="signin.html" class="text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-600 hover:text-white transition duration-300">S'inscrire</a>
+              </div>
+              <div class="md:hidden">
+                <button id="menu-toggle" class="text-blue-600 hover:text-blue-800 focus:outline-none">
+                    <span class="material-symbols-outlined">
+                        menu
+                        </span>
+                </button>
+              </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+              <ul class="bg-white px-4 py-2 space-y-2">
+                <li><a href="index.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Accueil</a></li>
+                <li><a href="about-us.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Qui sommes-nous ?</a></li>
+                <li><a href="demo.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Démo</a></li>
+                <li><a href="tarifs.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Tarifs</a></li>
+                <li><a href="signin.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Se connecter</a></li>
+                <li><a href="signup.html" class="block text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-600 hover:text-white transition duration-300">S'inscrire</a></li>
+              </ul>
+            </div>
+          </header>
+
+        <section class="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
+            <div class="absolute inset-0">
+                <img class="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left" src="Images/jeshoots-com-LtNvQHdKkmw-unsplash.jpg" alt="" />
+            </div>
+            <div class="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
+            <div class="absolute inset-0 block bg-black/60 md:hidden"></div>
+            <div class="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Réserver une démonstration en ligne</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="max-w-2xl mx-auto bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20">
+        <!-- Form Header -->
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                Commencez votre démo
+            </h2>
+            <p class="mt-2 text-gray-600">Remplissez le formulaire ci-dessous pour débuter</p>
+        </div>
+
+        <form class="space-y-6">
+            <!-- Personal Information Section -->
+            <div class="bg-blue-50/50 p-6 rounded-xl space-y-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-4">Informations personnelles</h3>
+                
+                <div class="relative">
+                    <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">
+                        Nom complet <span class="text-red-500">*</span>
+                    </label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 bg-white/70 backdrop-blur-sm transition-all duration-200 shadow-sm hover:border-blue-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:outline-none"
+                        required
+                    />
+                </div>
+
+                <div class="relative">
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+                        Numéro de téléphone <span class="text-red-500">*</span>
+                    </label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 bg-white/70 backdrop-blur-sm transition-all duration-200 shadow-sm hover:border-blue-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:outline-none"
+                        required
+                    />
+                </div>
+
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                    <div class="relative">
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                            E-mail <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 bg-white/70 backdrop-blur-sm transition-all duration-200 shadow-sm hover:border-blue-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:outline-none"
+                            required
+                        />
+                    </div>
+                    <div class="relative">
+                        <label for="confirmEmail" class="block text-sm font-medium text-gray-700 mb-1">
+                            Confirmez l'e-mail <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            type="email"
+                            id="confirmEmail"
+                            class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 bg-white/70 backdrop-blur-sm transition-all duration-200 shadow-sm hover:border-blue-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:outline-none"
+                            required
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Information Section -->
+            <div class="bg-blue-50/50 p-6 rounded-xl space-y-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-4">Informations de l'entreprise</h3>
+                
+                <div class="relative">
+                    <label for="company" class="block text-sm font-medium text-gray-700 mb-1">
+                        Nom de votre entreprise
+                    </label>
+                    <input
+                        type="text"
+                        id="company"
+                        class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 bg-white/70 backdrop-blur-sm transition-all duration-200 shadow-sm hover:border-blue-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:outline-none"
+                    />
+                </div>
+
+                <div class="relative">
+                    <label for="sector" class="block text-sm font-medium text-gray-700 mb-1">
+                        Votre secteur d'activité <span class="text-red-500">*</span>
+                    </label>
+                    <input
+                        type="text"
+                        id="sector"
+                        class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 bg-white/70 backdrop-blur-sm transition-all duration-200 shadow-sm hover:border-blue-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:outline-none"
+                        required
+                    />
+                </div>
+
+                <div class="relative">
+                    <label for="city" class="block text-sm font-medium text-gray-700 mb-1">
+                        Ville
+                    </label>
+                    <input
+                        type="text"
+                        id="city"
+                        class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 bg-white/70 backdrop-blur-sm transition-all duration-200 shadow-sm hover:border-blue-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:outline-none"
+                    />
+                </div>
+            </div>
+
+            <!-- Needs Section -->
+            <div class="bg-blue-50/50 p-6 rounded-xl">
+                <h3 class="text-lg font-semibold text-blue-800 mb-4">Votre besoin <span class="text-red-500">*</span></h3>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <label class="flex items-center p-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm transition-all duration-200 hover:border-blue-400 hover:shadow-md cursor-pointer">
+                        <input type="radio" name="need" class="h-4 w-4 text-blue-600" />
+                        <span class="text-sm text-gray-700 ml-3">Gestion du stock</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm transition-all duration-200 hover:border-blue-400 hover:shadow-md cursor-pointer">
+                        <input type="radio" name="need" class="h-4 w-4 text-blue-600" />
+                        <span class="text-sm text-gray-700 ml-3">Production</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm transition-all duration-200 hover:border-blue-400 hover:shadow-md cursor-pointer">
+                        <input type="radio" name="need" class="h-4 w-4 text-blue-600" />
+                        <span class="text-sm text-gray-700 ml-3">Facturation</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm transition-all duration-200 hover:border-blue-400 hover:shadow-md cursor-pointer">
+                        <input type="radio" name="need" class="h-4 w-4 text-blue-600" />
+                        <span class="text-sm text-gray-700 ml-3">Gestion des achats</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm transition-all duration-200 hover:border-blue-400 hover:shadow-md cursor-pointer">
+                        <input type="radio" name="need" class="h-4 w-4 text-blue-600" />
+                        <span class="text-sm text-gray-700 ml-3">Gestion de la trésorerie</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm transition-all duration-200 hover:border-blue-400 hover:shadow-md cursor-pointer">
+                        <input type="radio" name="need" class="h-4 w-4 text-blue-600" />
+                        <span class="text-sm text-gray-700 ml-3">Vente directe</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm transition-all duration-200 hover:border-blue-400 hover:shadow-md cursor-pointer">
+                        <input type="radio" name="need" class="h-4 w-4 text-blue-600" />
+                        <span class="text-sm text-gray-700 ml-3">Gestion des ventes</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg border border-gray-200 bg-white/70 backdrop-blur-sm transition-all duration-200 hover:border-blue-400 hover:shadow-md cursor-pointer">
+                        <input type="radio" name="need" class="h-4 w-4 text-blue-600" />
+                        <span class="text-sm text-gray-700 ml-3">CRM</span>
+                    </label>
+                </div>
+
+                <div class="mt-6">
+                    <label for="other" class="block text-sm font-medium text-gray-700 mb-1">
+                        Autre
+                    </label>
+                    <textarea
+                        id="other"
+                        rows="3"
+                        class="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 bg-white/70 backdrop-blur-sm transition-all duration-200 shadow-sm hover:border-blue-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/40 focus:outline-none"
+                    ></textarea>
+                </div>
+            </div>
+
+            <button
+                type="submit"
+                class="w-full flex justify-center py-4 px-6 border border-transparent rounded-xl shadow-lg text-base font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 hover:shadow-xl"
+            >
+                Demander une démo
+            </button>
+        </form>
+    </div>
+
+</body>
+<footer class="py-10 bg-gray-800 sm:pt-16 lg:pt-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-12">
+        <div>
+          <img
+            class="w-auto h-90"
+            src="Images/default_full_logo.png"
+            alt="Logo" />
+        </div>
+
+        <div>
+          <p class="text-lg font-semibold text-white">Liens Utiles</p>
+
+          <ul class="mt-8 space-y-4">
+            <li>
+              <a
+                href="about-us.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Qui sommes nous
+              </a>
+            </li>
+            <li>
+              <a
+                href="#faq"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a
+                href="tarifs.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Tarifs
+              </a>
+            </li>
+            <li>
+              <a
+                href="demo.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Demander un demo
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-lg font-semibold text-white">Resources</p>
+
+          <ul class="mt-8 space-y-4">
+            <li>
+              <a
+                href="index.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+               Accueil
+              </a>
+            </li>
+            <li>
+              <a
+                href="#pourquoi-harmora"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Pourquoi choisir Harmora ?
+              </a>
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Societes nous fais confiance
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-lg font-semibold text-white">Extra Links</p>
+
+          <ul class="mt-8 space-y-4">
+            <li>
+              <a
+                href="signin.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Se connecter
+              </a>
+            </li>
+            <li>
+              <a
+                href="signin.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                S'inscrire
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Terms & Conditions
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-20 md:mt-28 2xl:mt-32">
+        <div class="lg:flex lg:items-center lg:justify-between">
+          <div class="sm:flex sm:items-center sm:justify-start sm:space-x-8">
+            <ul
+              class="flex flex-wrap items-center justify-start mt-5 gap-x-8 sm:mt-0 gap-y-3">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="text-sm text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="text-sm text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="text-sm text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="mt-6 text-sm text-gray-300 lg:mt-0">
+            © Copyright 2021, All Rights Reserved by Harmora
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</html>

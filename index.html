@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>HARMORA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="relative bg-gradient-to-b from-blue-100 to-blue-300">
+      <header class="fixed top-0 left-0 right-0 z-50 bg-white">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+          <a href="#" class="flex items-center">
+            <img src="Images/default_favicon.png" alt="Logo" class="h-8 mr-2">
+          </a>
+          <nav class="hidden md:block">
+            <ul class="flex space-x-8">
+              <li><a href="index.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Accueil</a></li>
+              <li><a href="about-us.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Qui sommes-nous ?</a></li>
+              <li><a href="demo.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Démo</a></li>
+              <li><a href="tarifs.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Tarifs</a></li>
+            </ul>
+          </nav>
+          <div class="hidden md:flex space-x-4 items-center">
+            <a href="signin.html" class="text-gray-800 hover:text-blue-600 transition duration-300">Se connecter</a>
+            <a href="signin.html" class="text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-600 hover:text-white transition duration-300">S'inscrire</a>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-blue-600 hover:text-blue-800 focus:outline-none">
+              <span class="material-symbols-outlined">
+                menu
+                </span>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+          <ul class="bg-white px-4 py-2 space-y-2">
+            <li><a href="index.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Accueil</a></li>
+            <li><a href="about-us.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Qui sommes-nous ?</a></li>
+            <li><a href="demo.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Démo</a></li>
+            <li><a href="tarifs.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Tarifs</a></li>
+            <li><a href="signin.html" class="block text-gray-800 hover:text-blue-600 transition duration-300">Se connecter</a></li>
+            <li><a href="signup.html" class="block text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-600 hover:text-white transition duration-300">S'inscrire</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="overflow-hidden">
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center lg:items-stretch lg:max-h-[900px] lg:min-h-[900px]">
+          <div
+            class="w-full lg:w-1/2 p-8 lg:pl-16 lg:pr-8 flex items-center justify-center">
+            <img
+              class="w-86 h-auto object-contain"
+              src="Images/app-fre-traial.png"
+              alt="Phone Mockup" />
+          </div>
+
+          <div class="w-full lg:w-1/2 px-6 py-16 lg:py-40 lg:pl-10 lg:pr-24">
+            <h1 class="text-4xl font-bold text-black sm:text-6xl xl:text-7xl">
+              Transformation numérique <br />pour faire croître votre entreprise
+              !
+            </h1>
+            <p class="mt-6 text-base text-black sm:text-xl">
+              Notre succès dans la création de solutions d'affaires est en
+              grande partie dû à notre équipe talentueuse et hautement engagée.
+              Disposer de cette place de marché avec votre équipe de concepteurs
+              et développeurs qualifiés pour notre CRM de vente moderne libère
+              des revenus.
+            </p>
+            <a
+              href="demo.html"
+              class="inline-flex items-center px-6 py-5 text-base font-semibold text-white transition-all duration-200 bg-blue-500 mt-9 hover:bg-blue-600">
+              Commencez gratuitement
+            </a>
+
+            <div class="mt-8 border-t-2 border-black">
+              <div
+                class="pt-8 sm:flex sm:items-center sm:justify-between sm:pt-14">
+                <p class="text-base font-semibold text-black">
+                  App available on
+                </p>
+
+                <div class="flex items-center mt-5 space-x-5 sm:mt-0">
+                  <a
+                    href="#"
+                    class="block transition-all duration-200 hover:opacity-80">
+                    <img
+                      class="w-auto rounded h-14 sm:h-16"
+                      src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/app-store-button.png"
+                      alt="App Store" />
+                  </a>
+                  <a
+                    href="#"
+                    class="block transition-all duration-200 hover:opacity-80">
+                    <img
+                      class="w-auto rounded h-14 sm:h-16"
+                      src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/play-store-button.png"
+                      alt="Play Store" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pourquoi-harmora" class="py-10 bg-[#e0ecff] sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2
+              class="text-3xl font-bold leading-tight text-[#0f2f7e] sm:text-4xl lg:text-5xl">
+              Pourquoi choisir Harmora ?
+            </h2>
+          </div>
+
+          <div
+            class="px-5 py-8 mt-12 bg-white lg:mt-20 lg:p-16 shadow-lg rounded-lg">
+            <div class="grid grid-cols-1 gap-12 lg:gap-16 sm:grid-cols-2">
+              <div class="flex items-start">
+                <svg
+                  class="flex-shrink-0 w-16 h-16 text-[#0f2f7e]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <div class="ml-5">
+                  <h3 class="text-lg font-semibold text-[#0f2f7e]">
+                    Solutions Logicielles Personnalisées
+                  </h3>
+                  <p class="mt-4 text-base text-gray-700">
+                    Des solutions logicielles sur mesure adaptées à vos besoins
+                    spécifiques, assurant croissance et évolutivité.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <svg
+                  class="flex-shrink-0 w-16 h-16 text-[#0f2f7e]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <div class="ml-5">
+                  <h3 class="text-lg font-semibold text-[#0f2f7e]">
+                    Tutoriels
+                  </h3>
+                  <p class="mt-4 text-base text-gray-700">
+                    Accédez à une vaste bibliothèque de tutoriels et de
+                    formations pour mieux comprendre nos solutions et tirer le
+                    meilleur parti de nos outils digitaux.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <svg
+                  class="flex-shrink-0 w-16 h-16 text-[#0f2f7e]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                </svg>
+                <div class="ml-5">
+                  <h3 class="text-lg font-semibold text-[#0f2f7e]">
+                    Automatisation des Processus Métiers
+                  </h3>
+                  <p class="mt-4 text-base text-gray-700">
+                    Automatisez les tâches répétitives pour augmenter la
+                    productivité et vous concentrer sur l'essentiel.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <svg
+                  class="flex-shrink-0 w-16 h-16 text-[#0f2f7e]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <div class="ml-5">
+                  <h3 class="text-lg font-semibold text-[#0f2f7e]">
+                    Paiement Sécurisé
+                  </h3>
+                  <p class="mt-4 text-base text-gray-700">
+                    Assurez des transactions en ligne sécurisées avec nos
+                    solutions de paiement, protégeant vos données et celles de
+                    vos clients.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div class="max-w-2xl mx-auto text-center">
+            <h2
+              class="text-3xl font-bold leading-tight text-blue-800 sm:text-4xl lg:text-5xl">
+              Questions Fréquemment Posées
+            </h2>
+            <p
+              class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-700">
+              Trouvez des réponses aux questions les plus courantes que nous
+              recevons.
+            </p>
+          </div>
+
+          <div class="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+            <div
+              class="transition-all duration-200 bg-white border border-blue-300 shadow-lg cursor-pointer hover:bg-blue-50">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+                onclick="toggleAnswer(this)">
+                <span class="flex text-lg font-semibold text-blue-800">
+                  Comment télécharger l'application ?
+                </span>
+                <svg
+                  class="w-6 h-6 text-blue-500 rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p class="text-gray-700">
+                  Pour télécharger l'application, rendez-vous sur le site
+                  officiel ou trouvez-la sur les stores d'applications comme
+                  Google Play Store pour Android et App Store pour iOS.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="transition-all duration-200 bg-white border border-blue-300 shadow-lg cursor-pointer hover:bg-blue-50">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+                onclick="toggleAnswer(this)">
+                <span class="flex text-lg font-semibold text-blue-800">
+                  Comment acheter l'application ?
+                </span>
+                <svg
+                  class="w-6 h-6 text-blue-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p class="text-gray-700">
+                  Pour acheter l'application, accédez à la page de paiement sur
+                  notre site ou utilisez l'option d'achat intégrée sur les
+                  stores d'applications.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="transition-all duration-200 bg-white border border-blue-300 shadow-lg cursor-pointer hover:bg-blue-50">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+                onclick="toggleAnswer(this)">
+                <span class="flex text-lg font-semibold text-blue-800">
+                  Puis-je obtenir un remboursement ?
+                </span>
+                <svg
+                  class="w-6 h-6 text-blue-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p class="text-gray-700">
+                  Oui, vous pouvez demander un remboursement en suivant les
+                  étapes indiquées dans notre
+                  <a href="#" class="text-blue-600 hover:underline"
+                    >politique de remboursement</a
+                  >.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="transition-all duration-200 bg-white border border-blue-300 shadow-lg cursor-pointer hover:bg-blue-50">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+                onclick="toggleAnswer(this)">
+                <span class="flex text-lg font-semibold text-blue-800">
+                  Comment contacter le support ?
+                </span>
+                <svg
+                  class="w-6 h-6 text-blue-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div class="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p class="text-gray-700">
+                  Vous pouvez contacter notre équipe de support via notre
+                  <a href="#" class="text-blue-600 hover:underline"
+                    >formulaire de contact</a
+                  >
+                  ou en envoyant un e-mail à support@example.com.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-center text-gray-700 text-base mt-9">
+            Vous n'avez pas trouvé la réponse à votre question ?
+            <a
+              href="#"
+              class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+              >Contactez notre support</a
+            >
+          </p>
+        </div>
+      </section>
+
+      
+      <section class="py-10 bg-[#e0ecff] sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2
+              class="text-3xl font-bold leading-tight text-[#0f2f7e] sm:text-4xl lg:text-5xl">
+              Demander une Démo
+            </h2>
+            <p
+              class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-700">
+              Découvrez comment notre solution peut transformer votre
+              entreprise.
+            </p>
+          </div>
+
+          <div class="flex justify-center mt-8">
+            <a href="demo.html">
+              <button
+              onclick="showDemoMessage()"
+              class="px-8 py-4 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-all duration-200">
+              Demander une démo
+            </button>
+            </a>
+          
+          </div>
+        </div>
+      </section>
+
+   
+    </div>
+  </body>
+  <footer class="py-10 bg-gray-800 sm:pt-16 lg:pt-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-12">
+        <div>
+          <img
+            class="w-auto h-90"
+            src="Images/default_full_logo.png"
+            alt="Logo" />
+        </div>
+
+        <div>
+          <p class="text-lg font-semibold text-white">Liens Utiles</p>
+
+          <ul class="mt-8 space-y-4">
+            <li>
+              <a
+                href="about-us.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Qui sommes nous
+              </a>
+            </li>
+            <li>
+              <a
+                href="#faq"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a
+                href="tarifs.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Tarifs
+              </a>
+            </li>
+            <li>
+              <a
+                href="demo.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Demander un demo
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-lg font-semibold text-white">Resources</p>
+
+          <ul class="mt-8 space-y-4">
+            <li>
+              <a
+                href="index.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+               Accueil
+              </a>
+            </li>
+            <li>
+              <a
+                href="#pourquoi-harmora"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Pourquoi choisir Harmora ?
+              </a>
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Societes nous fais confiance
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-lg font-semibold text-white">Extra Links</p>
+
+          <ul class="mt-8 space-y-4">
+            <li>
+              <a
+                href="signin.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Se connecter
+              </a>
+            </li>
+            <li>
+              <a
+                href="signin.html"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                S'inscrire
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Terms & Conditions
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                title=""
+                class="text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-20 md:mt-28 2xl:mt-32">
+        <div class="lg:flex lg:items-center lg:justify-between">
+          <div class="sm:flex sm:items-center sm:justify-start sm:space-x-8">
+            <ul
+              class="flex flex-wrap items-center justify-start mt-5 gap-x-8 sm:mt-0 gap-y-3">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="text-sm text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="text-sm text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="text-sm text-gray-300 transition-all duration-200 hover:text-white focus:text-white">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="mt-6 text-sm text-gray-300 lg:mt-0">
+            © Copyright 2021, All Rights Reserved by Harmora
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</html>
